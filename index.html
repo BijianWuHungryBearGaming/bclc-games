@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrapper
+        {
+        display: flex;
+        border: 3px solid red;
+        }
+
+        .image-div
+        {
+        /* flex: 1; */
+        width: 200px;
+        height: 200px;
+        }
+
+        .text-div
+        {
+        flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <script>
+         function launchCandyCrashGame(){
+            var userId = "TEST_USER_";
+            userId += Math.floor(Math.random() * 1_000_000);
+            window.location.replace(`https://emulator.staging.jellycdn.com/index.php?casinoId=2&siteId=jelly&gameId=CANDYCRASH8E3&enableWundermachineCheats=false&userId=${userId}&locale=en-*&channel=mobile&gameMode=FUN&currency=USD&token=HT5BRA1JM-ZPERYIOL-MN8&debugMode=false&music=1&sfx=1&errorHandling=null&gameURL=&brokerLocation=true&regulatedMarket=&rcPeriod=&rcElapsedSeconds=null&rcOperatorCallback=null&gameParams=tweakerRequired=true&casinoMode=true&iframeMode=false`);
+         } 
+
+         function launchBossHogBonanzaGame(){
+            var userId = "TEST_USER_";
+            userId += Math.floor(Math.random() * 1_000_000);
+            window.location.replace(`https://emulator.staging.jellycdn.com/index.php?casinoId=2&siteId=jelly&gameId=BOSSHOGBONANZA2E4&enableWundermachineCheats=false&userId=${userId}&locale=en-*&channel=mobile&gameMode=FUN&currency=USD&token=HT5BRA1JM-ZPERYIOL-MN8&debugMode=false&music=1&sfx=1&errorHandling=null&gameURL=&brokerLocation=true&regulatedMarket=&rcPeriod=&rcElapsedSeconds=null&rcOperatorCallback=null&gameParams=tweakerRequired=true&casinoMode=true&iframeMode=false`);
+         } 
+    </script>
+    <h1>BCLC Launcher</h1>
+    <div class="wrapper">
+
+ <img class="image-div" src="./images/candy_crash_logo.png" onclick="launchCandyCrashGame()"/>
+
+<img class="image-div" src="./images/boss_hog_bonanza_logo.png" onclick="launchBossHogBonanzaGame()"/>
+  <!-- <div class="text-div">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In           itaque assumenda explicabo blanditiis! Mollitia adipisci            voluptates doloremque porro eaque dolor blanditiis deserunt.          Illum optio ut minus magni nemo ipsum obcaecati.
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. In           itaque assumenda explicabo blanditiis! Mollitia adipisci              voluptates doloremque porro eaque dolor blanditiis deserunt.        Illum optio ut minus magni nemo ipsum obcaecati.</p>
+  </div> -->
+</div>
+</body>
+</html>
